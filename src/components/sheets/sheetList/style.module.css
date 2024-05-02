@@ -1,0 +1,35 @@
+.sheet-list {
+  width: 100%;
+  .sheet-list-ul{
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    .sheet-list-li{
+      width: 100%;
+      .sheet-item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        padding: 10px 0;
+        text-transform: uppercase;
+        border-radius: 5px;
+        transition: all 500ms;
+        cursor: pointer;
+        &.active {
+          background: #e4923c;
+          color: white;
+        }
+        &:hover{
+          background: #e4923c;
+          color: white;
+        }
+      }
+    }
+  }
+}
